@@ -8,13 +8,13 @@ function myObject() {
 
     try {
         MATH_CONSTANTS.E = 23;
-    } catch(error) {
+    } catch (error) {
         console.log(error.message);
     }
     return MATH_CONSTANTS.E;
 }
 
 const E = myObject();
-console.log(myObject());
+console.log(myObject(E));
 
 module.exports = myObject;
