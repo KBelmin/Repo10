@@ -3,8 +3,12 @@ var lion = {
     legs: 4,
     tails: 1
 }
-function myFunction (par1, par2) {
-    lion.roar = par2;
+
+function myFunction(propName, propValue) {
+    lion[propName] = propValue;
     return lion;
 }
+
 console.log(myFunction("roar", "roar-roar"));
+
+module.exports = myFunction;

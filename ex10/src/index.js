@@ -21,9 +21,12 @@ function myFunction() {
                 3: "MP4"
             },
             gold: false
-        }
+        },
     };
     return myMusic;
 }
+
 console.log(myFunction()[2]);
+
+myFunction()[2];
 module.exports = myFunction;
